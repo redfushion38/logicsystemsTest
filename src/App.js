@@ -1,17 +1,19 @@
 import React, { useEffect, useState } from 'react';
-
+import './App.css';
 function App() {
   const [users, setUsers] = useState([]);
-
-  useEffect(() => {
+  //funcion para incluir la api
+  const jsonn = () => {
     fetch('https://jsonplaceholder.typicode.com/users')
       .then(response => response.json())
       .then(data => setUsers(data));
-  }, []);
+  }
+
+  useEffect(jsonn, []);
 
   return (
     <div className="App ancho">
-      <h1>User Information</h1>
+      <h1>Usuarios</h1>
       <div className="user-list">
         {users.map(user => (
           <div className="user-card" key={user.id}>
