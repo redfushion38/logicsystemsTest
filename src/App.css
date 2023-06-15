@@ -40,3 +40,38 @@
     margin: 5px 0;
   }
   
+  /* header */
+.heado{
+  background-color: #f1f1f1;
+  padding: 10px;
+}
+.logo {
+  text-align: center; 
+  margin: 10px;
+}
+.logo img{
+  width: 80px;
+  height: auto;
+  vertical-align: middle;
+  border-radius: 50px;
+  background-color: black;
+}
+
+
+
+.final{
+  background-color: #f1f1f1;
+  padding: 10px;
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  
+}
+.finizq, .finder{
+  width: 45%;
+  padding: 10px;
+  margin: 10px;
+  text-align:center;
+}
